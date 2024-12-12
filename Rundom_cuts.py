@@ -31,5 +31,5 @@ plt.scatter(left[:,0], left[:, 1], c = 'blue', label = 'Left')
 plt.scatter(right[:, 0], right[:, 1], c = 'red', label = 'Right')
 #plt.axhline((0, offset), slope = -normal[0]/normal[1], color = 'green', label = 'Hyperplane') - cortage was an error
 plt.axhline(y=offset, color='green', label='Hyperplane')
-plt.legend()
+plt.legend(loc = 'lower left')
 plt.show()
