@@ -29,6 +29,7 @@ left, right = split_data(data, normal, offset)
 #visualization
 plt.scatter(left[:,0], left[:, 1], c = 'blue', label = 'Left')
 plt.scatter(right[:, 0], right[:, 1], c = 'red', label = 'Right')
-plt.axhline((0, offset), slope = -normal[0]/normal[1], color = 'green', label = 'Hyperplane')
+#plt.axhline((0, offset), slope = -normal[0]/normal[1], color = 'green', label = 'Hyperplane') - cortage was an error
+plt.axhline(y=offset, color='green', label='Hyperplane')
 plt.legend()
 plt.show()
